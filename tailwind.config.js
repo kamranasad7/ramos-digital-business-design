@@ -25,6 +25,12 @@ export default {
         },
         'secondary': '#fe4a23',
         'tertiary': '#f8d250'
+      },
+      borderRadius: {
+        '4xl': '2rem',
+      },
+      maxWidth: {
+        full: '1280px',
       }
     },
   },
