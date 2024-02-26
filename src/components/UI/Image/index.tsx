@@ -1,5 +1,4 @@
 import { ImgHTMLAttributes } from "react"
-import type { IconButtonType } from "../IconButton"
 
 interface ImageProps extends ImgHTMLAttributes<HTMLImageElement> {
     cornerButton?: any;
