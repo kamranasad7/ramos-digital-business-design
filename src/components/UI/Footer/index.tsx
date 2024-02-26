@@ -6,7 +6,7 @@ import { TextSliderUpper } from '../../TextSlider';
 
 const Footer: React.FC = () => {
 
-	const qrAnimation = keyframes `
+	const zoomAnimation = keyframes`
 	from {
 		opacity: 0;
 		transform: translate3d(0, 100px, 0) scale(0.5, 0.5);
@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
 	return (
 		<div className='flex flex-col gap-16 px-20 py-32 pb-10 bg-primary text-primary-50'>
 			<div className='flex items-center justify-between'>
-				
+
 				<Slide direction='up'>
 					<div className='flex gap-10'>
 						<a className='text-xl transition-all duration-300 cursor-pointer text-primary-400 hover:text-primary-50'>About</a>
@@ -59,18 +59,20 @@ const Footer: React.FC = () => {
 			</div>
 			<div className='flex items-center justify-between'>
 
-				<TextSliderUpper 
-				text='Ramos'
-				className='flex relative font-semibold text-10xl leading-[10rem]'
+				<TextSliderUpper
+					text='Ramos'
+					className='flex relative font-semibold text-10xl leading-[10rem]'
 				/>
-				<span className='ml-[-120px] mb-5 text-7xl align-super'>&#174;</span>
-				
-				
+				<Reveal keyframes={zoomAnimation} duration={1500}>
+					<span className='ml-[-120px] mb-14 text-7xl align-super'>&#174;</span>
+				</Reveal>
+
+
 				<a href='#' className='transition duration-300 cursor-pointer text-primary-400 hover:text-primary-50'>Privacy Policy</a>
 				<a href='#' className='transition duration-300 cursor-pointer text-primary-400 hover:text-primary-50'>License agreement</a>
-				
-				<Reveal keyframes={qrAnimation} duration={1500}>
-				<div className='p-3 rounded-[2rem] bg-primary-50 text-primary'><MdQrCode2 className='w-40 h-40' /></div>
+
+				<Reveal keyframes={zoomAnimation} duration={1500}>
+					<div className='p-3 rounded-4xl bg-primary-50 text-primary'><MdQrCode2 className='w-40 h-40' /></div>
 				</Reveal>
 			</div>
 		</div>

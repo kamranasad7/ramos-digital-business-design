@@ -22,7 +22,7 @@ export const TextSliderUpper: SliderType = (props) => {
     
       to {
         opacity: 1;
-        transform: translate3d( 0, 0, -10) scale(1, 1);
+        transform: translate3d( 0, 0, 1) scale(1, 1);
       }
     `;
 
@@ -30,9 +30,13 @@ export const TextSliderUpper: SliderType = (props) => {
 
     return (
         <div className={props.className} style={props.style}>
-            {wordSplit?.map((char, i) => {
-                return <Reveal key={i} keyframes={letterAnimation} duration={2000} delay={props.delay}>{char}</Reveal>
+
+            <Reveal keyframes={letterAnimation} duration={2000} delay={props.delay}>
+
+            {wordSplit?.map((char) => {
+                return <Reveal keyframes={letterAnimation}><div>{char}</div></Reveal>
             })}
+            </Reveal>
         </div>
     )
 };

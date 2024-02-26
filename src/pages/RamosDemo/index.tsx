@@ -27,17 +27,19 @@ const RamosDemo: React.FC = () => {
                 <Slide direction="up" duration={3000} delay={-1500}>
                     <img src='ramos_web.png' alt='' />
                 </Slide>
-                <img className='absolute left-[38%] top-[30%]' src='ramos_mobile.png' alt='' />
+                <img className='absolute left-[38%] top-[30%] z-50' src='ramos_mobile.png' alt='' />
+
+            </div>
+            <div className='-z-10'>
+                <TextSliderUpper
+                    text="Ramos"
+                    delay={1000}
+                    className='flex pl-40 pb-24 text-center text-secondary font-semibold text-[25vw] leading-[22vw] bg-[length:120px_120px]'
+                    style={{ backgroundImage: 'linear-gradient(to right, #e7e7e7 1px, transparent 1px), linear-gradient(to bottom, #e7e7e7 1px, transparent 1px)' }}
+                />
 
             </div>
 
-            <TextSliderUpper 
-            text="Ramos" 
-            delay={8000}
-            className='flex pl-10 pb-24 text-center text-secondary font-semibold text-[25vw] leading-[22vw] bg-[length:120px_120px]'
-            style={{ backgroundImage: 'linear-gradient(to right, #e7e7e7 1px, transparent 1px), linear-gradient(to bottom, #e7e7e7 1px, transparent 1px)' }}
-            />
-            
         </div>
     );
 };

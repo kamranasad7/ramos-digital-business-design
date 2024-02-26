@@ -1,15 +1,37 @@
-import { Fade } from 'react-awesome-reveal'
+import Reveal, { Fade } from 'react-awesome-reveal'
 import Button from '../../components/UI/Button';
 import { Card } from '../../components/UI/Card';
 import VisitorsWidget from '../../components/Widgets/VisitorsWidget';
 import TotalProfitWidget from '../../components/Widgets/TotalProfitWidget';
 import VisitStatsWidget from '../../components/Widgets/VisitStatsWidget';
 import TransactionsWidget from '../../components/Widgets/TransactionsWidget';
+import { keyframes } from '@emotion/react';
 
 const Analytics: React.FC = () => {
 
+    const profile1Animation = keyframes`
+    from {
+		opacity: 0;
+		transform: translate3d(30px, 100px, 0);
+	  }
+	
+	  to {
+		opacity: 1;
+		transform: translate3d(0, 0, 1);
+	  }
+    `;
 
-
+    const profile2Animation = keyframes`
+    from {
+		opacity: 0;
+		transform: translate3d(-30px, 100px, 0);
+	  }
+	
+	  to {
+		opacity: 1;
+		transform: translate3d(0, 0, 1);
+	  }
+    `;
     
     return (
         <div className='w-full bg-primary-50 rounded-4xl py-20'>
@@ -48,12 +70,13 @@ const Analytics: React.FC = () => {
                 <div className='flex flex-[2]'>
                     <Card variant='primary' className='flex flex-col justify-center gap-6 rounded-3xl p-10 px-20'>
                         <div className='flex gap-2 justify-center'>
-                            <Fade direction='up' duration={2500}>
+
+                            <Reveal keyframes={profile1Animation} duration={1500}>
                                 <TransactionsWidget />
-                            </Fade>
-                            <Fade direction='up' duration={2500}>
+                            </Reveal>
+                            <Reveal keyframes={profile2Animation} duration={1500}>
                                 <TransactionsWidget />
-                            </Fade>
+                            </Reveal>
                         </div>
 
                         <span className='text-center text-xl'>Widget Control</span>
@@ -68,7 +91,9 @@ const Analytics: React.FC = () => {
                     &nbsp;
                     <span className='text-8xl font-semibold'>45%</span>
                 </div>
+                <Fade direction='up' duration={2000}>
                 <p>Increase your analytics efficiency by up to 45%. Unique algorithms provide insights from data, reduce time for analysis and save time for making imporant, informed decisions</p>
+                </Fade>
             </div>
         </div>
     );
