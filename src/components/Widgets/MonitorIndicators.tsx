@@ -13,12 +13,8 @@ export const MonitorIndicators: React.FC = () => {
     return (
         <Card className="!bg-primary-50 relative pb-0 px-0">
             <div className="relative h-full flex flex-col justify-end items-center gap-6 bg-[length:120px_120px]">
+                <Card variant='light' className="absolute top-10 w-[55%] z-0 h-60" />
 
-                <Slide direction="up">
-                    <div className="relative">
-                        <Card variant='light' className="absolute top-10 w-[55%] z-0 h-60" />
-                    </div>
-                </Slide>
                 <Card variant='light' className="absolute top-16 w-[70%] z-10 h-60 py-3 px-3">
                     <div className="relative flex items-center gap-3">
                         <div className="bg-primary-50 rounded-lg flex items-center justify-center p-2"><TbVectorTriangle /></div>

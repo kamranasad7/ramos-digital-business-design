@@ -43,7 +43,10 @@ const Analytics: React.FC = () => {
         <div className='w-full bg-primary-50 rounded-4xl py-20'>
 
             <div className='grid grid-cols-5 items-center mx-auto max-w-full mb-20'>
-                <div className='text-6xl font-medium col-span-3'>Your key to strategic<br /> success through analytics</div>
+                <Fade direction='up' cascade duration={1500} className='text-6xl font-medium col-span-3'>
+                    <div>Your key to strategic</div>
+                    <div>success through analytics</div>
+                </Fade>
                 <div className='text-xl text-center col-span-2'>Ready for excting, instantaneous,<br /> all-accessible insights in real time?</div>
             </div>
 
@@ -98,7 +101,7 @@ const Analytics: React.FC = () => {
                     <span ref={ref} className='text-8xl font-semibold'>{count}%</span>
                 </div>
                 <Fade direction='up' duration={2000}>
-                <p>Increase your analytics efficiency by up to 45%. Unique algorithms provide insights from data, reduce time for analysis and save time for making imporant, informed decisions</p>
+                    <p>Increase your analytics efficiency by up to 45%. Unique algorithms provide insights from data, reduce time for analysis and save time for making imporant, informed decisions</p>
                 </Fade>
             </div>
         </div>

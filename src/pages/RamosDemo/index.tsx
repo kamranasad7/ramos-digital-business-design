@@ -33,7 +33,6 @@ const RamosDemo: React.FC = () => {
             <div className='-z-10'>
                 <TextSliderUpper
                     text="Ramos"
-                    delay={1000}
                     className='flex pl-40 pb-24 text-center text-secondary font-semibold text-[25vw] leading-[22vw] bg-[length:120px_120px]'
                     style={{ backgroundImage: 'linear-gradient(to right, #e7e7e7 1px, transparent 1px), linear-gradient(to bottom, #e7e7e7 1px, transparent 1px)' }}
                 />
