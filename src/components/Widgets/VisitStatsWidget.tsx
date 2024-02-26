@@ -6,9 +6,7 @@ const VisitStatsWidget = () => {
             <span className='text-sm font-medium'>Visit Statistics</span>
 
             <div className='flex gap-2'>
-
-                <div>Chart</div>
-
+                <img className='min-w-0 flex-[2]' src='chart.png' alt='' />
                 <RateWidget />
             </div>
         </div>

@@ -30,8 +30,8 @@ export const TextSliderUpper: SliderType = (props) => {
 
     return (
         <div className={props.className} style={props.style}>
-            {wordSplit?.map((char) => {
-                return <Reveal keyframes={letterAnimation} duration={2000} delay={props.delay}>{char}</Reveal>
+            {wordSplit?.map((char, i) => {
+                return <Reveal key={i} keyframes={letterAnimation} duration={2000} delay={props.delay}>{char}</Reveal>
             })}
         </div>
     )
