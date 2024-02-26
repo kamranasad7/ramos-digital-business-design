@@ -1,4 +1,4 @@
-
+import { Fade } from 'react-awesome-reveal'
 import Button from '../../components/UI/Button';
 import { Card } from '../../components/UI/Card';
 import VisitorsWidget from '../../components/Widgets/VisitorsWidget';
@@ -7,6 +7,10 @@ import VisitStatsWidget from '../../components/Widgets/VisitStatsWidget';
 import TransactionsWidget from '../../components/Widgets/TransactionsWidget';
 
 const Analytics: React.FC = () => {
+
+
+
+    
     return (
         <div className='w-full bg-primary-50 rounded-4xl py-20'>
 
@@ -44,8 +48,12 @@ const Analytics: React.FC = () => {
                 <div className='flex flex-[2]'>
                     <Card variant='primary' className='flex flex-col justify-center gap-6 rounded-3xl p-10 px-20'>
                         <div className='flex gap-2 justify-center'>
-                            <TransactionsWidget />
-                            <TransactionsWidget />
+                            <Fade direction='up' duration={2500}>
+                                <TransactionsWidget />
+                            </Fade>
+                            <Fade direction='up' duration={2500}>
+                                <TransactionsWidget />
+                            </Fade>
                         </div>
 
                         <span className='text-center text-xl'>Widget Control</span>
