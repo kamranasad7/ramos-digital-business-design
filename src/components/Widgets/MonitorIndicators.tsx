@@ -2,7 +2,6 @@ import { TbVectorTriangle } from "react-icons/tb";
 import { Card } from "../UI/Card";
 import { MdOutlineInsights } from "react-icons/md";
 import Button from "../UI/Button";
-import { Slide } from "react-awesome-reveal";
 import { useRef } from "react";
 import useScrollTriggeredCountUp from "../../hooks/useScrollTriggeredCountUp";
 
