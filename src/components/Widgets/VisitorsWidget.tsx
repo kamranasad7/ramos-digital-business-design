@@ -1,6 +1,12 @@
+import { useRef } from 'react';
 import { FaArrowCircleUp } from 'react-icons/fa';
+import useScrollTriggeredCountUp from '../../hooks/useScrollTriggeredCountUp';
 
 const VisitorsWidget = () => {
+    
+    const ref = useRef<HTMLSpanElement>(null);
+    const count = useScrollTriggeredCountUp(ref, 40); // 0 to 100 count-up
+
     return (
         <div className='bg-primary-50 rounded-2xl flex flex-col gap-2 flex-1 p-4'>
             <span>Visitors</span>
@@ -11,7 +17,7 @@ const VisitorsWidget = () => {
             </div>
 
             <div className='font-semibold flex gap-1'>
-                <span className='text-3xl'>40K</span>
+                <span ref={ref} className='text-3xl'>{count}K</span>
                 <div className='text-emerald-500 flex items-start'>
                     <FaArrowCircleUp size={14} />
                     <span className=' text-sm leading-3'>+14%</span>

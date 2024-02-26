@@ -3,8 +3,13 @@ import { Card } from "../UI/Card";
 import { MdOutlineInsights } from "react-icons/md";
 import Button from "../UI/Button";
 import { Slide } from "react-awesome-reveal";
+import { useRef } from "react";
+import useScrollTriggeredCountUp from "../../hooks/useScrollTriggeredCountUp";
 
 export const MonitorIndicators: React.FC = () => {
+    const ref = useRef<HTMLSpanElement>(null);
+    const count = useScrollTriggeredCountUp(ref, 2642); // 0 to 100 count-up
+
     return (
         <Card className="!bg-primary-50 relative pb-0 px-0">
             <div className="relative h-full flex flex-col justify-end items-center gap-6 bg-[length:120px_120px]">
@@ -29,7 +34,7 @@ export const MonitorIndicators: React.FC = () => {
                             </div>
                             <div className="flex flex-col gap-2 whitespace-nowrap bottom-0 absolute">
                                 <span className="text-primary-400 font-semibold">Total profit</span>
-                                <span className="font-semibold text-xl">$ <span className="text-4xl">264,2K</span></span>
+                                <span ref={ref} className="font-semibold text-xl">$ <span className="text-4xl">{count}K</span></span>
                                 <Button variant='tertiary' className="rounded-xl py-3 shadow-tertiary shadow mt-4">Data Visualization</Button>
                             </div>
                         </div>

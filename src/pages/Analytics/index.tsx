@@ -6,6 +6,9 @@ import TotalProfitWidget from '../../components/Widgets/TotalProfitWidget';
 import VisitStatsWidget from '../../components/Widgets/VisitStatsWidget';
 import TransactionsWidget from '../../components/Widgets/TransactionsWidget';
 import { keyframes } from '@emotion/react';
+import AvatarWidget from '../../components/Widgets/AvatarWidget';
+import { useRef } from 'react';
+import useScrollTriggeredCountUp from '../../hooks/useScrollTriggeredCountUp';
 
 const Analytics: React.FC = () => {
 
@@ -33,6 +36,9 @@ const Analytics: React.FC = () => {
 	  }
     `;
     
+    const ref = useRef<HTMLSpanElement>(null);
+    const count = useScrollTriggeredCountUp(ref, 45); // 0 to 100 count-up
+
     return (
         <div className='w-full bg-primary-50 rounded-4xl py-20'>
 
@@ -72,7 +78,7 @@ const Analytics: React.FC = () => {
                         <div className='flex gap-2 justify-center'>
 
                             <Reveal keyframes={profile1Animation} duration={1500}>
-                                <TransactionsWidget />
+                                <AvatarWidget />
                             </Reveal>
                             <Reveal keyframes={profile2Animation} duration={1500}>
                                 <TransactionsWidget />
@@ -89,7 +95,7 @@ const Analytics: React.FC = () => {
                 <div>
                     <span className='text-xl font-medium text-nowrap'>Up to</span>
                     &nbsp;
-                    <span className='text-8xl font-semibold'>45%</span>
+                    <span ref={ref} className='text-8xl font-semibold'>{count}%</span>
                 </div>
                 <Fade direction='up' duration={2000}>
                 <p>Increase your analytics efficiency by up to 45%. Unique algorithms provide insights from data, reduce time for analysis and save time for making imporant, informed decisions</p>
