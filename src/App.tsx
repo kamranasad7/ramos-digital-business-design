@@ -1,6 +1,7 @@
 import Footer from './components/UI/Footer';
 import Navbar from './components/UI/Navbar';
 import Analytics from './pages/Analytics';
+import Efficiency from './pages/Efficiency';
 import Features from './pages/Features';
 import GetStarted from './pages/GetStarted';
 import RamosDemo from './pages/RamosDemo';
@@ -11,9 +12,10 @@ function App() {
         <div className='w-full mt-8'>
             <Navbar />
 
-            <div className='mt-20 flex flex-col gap-28 mb-32'>
+            <div className='flex flex-col mt-20 mb-32 gap-28'>
                 <TagLine />
                 <Analytics />
+                <Efficiency />
                 <RamosDemo />
                 <Features />
                 <GetStarted />
