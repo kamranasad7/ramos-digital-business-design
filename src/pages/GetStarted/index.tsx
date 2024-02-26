@@ -40,10 +40,10 @@ const GetStarted: React.FC = () => {
                 <div>Turn information into advantage! Start using </div>
                 <div> Ramos today. Sign up for free trail.</div>
             </div>
-            <div className='flex gap-4 mb-20 mt-10'>
+            <div className='flex gap-4 mt-10 mb-20'>
                 <Reveal keyframes={buttonsAnimation} duration={2000}>
-                    <Button variant="light" className='pl-[50px] pr-[50px] rounded-[10px] !text-black'>Request a demo</Button>
-                    <Button className='pl-[50px] pr-[50px] rounded-[10px]' variant="secondary">Start for free</Button>
+                    <Button variant="light" className='px-10 !text-black rounded-xl'>Request a demo</Button>
+                    <Button className='px-12 rounded-xl' variant="secondary">Start for free</Button>
                 </Reveal>
 
             </div>
