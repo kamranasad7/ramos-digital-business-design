@@ -1,5 +1,6 @@
 import { TbActivityHeartbeat } from "react-icons/tb";
 import IconButton from "../../components/UI/IconButton";
+import Button from "../../components/UI/Button";
 
 const Efficiency: React.FC = () => {
   return (
@@ -25,6 +26,14 @@ const Efficiency: React.FC = () => {
 					</IconButton>
 				</div>
 				<span className="rounded-4xl whitespace-nowrap bg-tertiary text-9xl w-[28rem] overflow-hidden flex items-center h-fit py-4 pb-8 px-2">Analytics Service</span>
+			</div>
+			<hr className="w-full my-16"></hr>
+			<div className="flex justify-between">
+				<p className="font-semibold">Explore traffic sources, page behavior, conversations and more to gain deep insight <br /> into your audience. With us, your business doesn't just adapt - it evolves</p>
+				<div className="flex gap-4">
+					<Button variant="light" className="px-8 !text-primary rounded-xl">Request a demo</Button>
+					<Button variant="secondary" className="px-12 rounded-xl">Start for free</Button>
+				</div>
 			</div>
 		</div>
   )
