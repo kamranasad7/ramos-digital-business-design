@@ -82,7 +82,7 @@ const CustomerServiceWidget = () => {
                         </div>
                     </Reveal>
                 </div>
-                <div className="flex justify-end flex-col h-full w-full">
+                <div className="flex justify-end flex-col h-full w-full bg-[length:120px_120px]" style={{ backgroundImage: 'linear-gradient(to right, #e7e7e7 1px, transparent 1px), linear-gradient(to bottom, #e7e7e7 1px, transparent 1px)' }}>
                     <div className="flex flex-col h-fit gap-6 items-center p-4 bg-primary-50 w-full rounded-b-2xl drop-shadow-2xl">
                         <span className='text-2xl font-medium'>Improved customer service</span>
                         <p className="px-[6.7rem] text-center">Analytics helps optimize service processes by providing information on how to improve interactions with customers and increase their satisfaction</p>

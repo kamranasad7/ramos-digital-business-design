@@ -7,7 +7,7 @@ import { Slide } from "react-awesome-reveal";
 export const MonitorIndicators: React.FC = () => {
     return (
         <Card className="!bg-primary-50 relative pb-0 px-0">
-            <div className="relative h-full flex flex-col justify-end items-center gap-6">
+            <div className="relative h-full flex flex-col justify-end items-center gap-6 bg-[length:120px_120px]">
 
                 <Slide direction="up">
                     <div className="relative">
