@@ -70,7 +70,7 @@ const Footer: React.FC = () => {
 				<a href='#' className='transition duration-300 cursor-pointer text-primary-400 hover:text-primary-50'>License agreement</a>
 				
 				<Reveal keyframes={qrAnimation} duration={1500}>
-				<div className='p-3 rounded-4xl bg-primary-50 text-primary'><MdQrCode2 className='w-40 h-40' /></div>
+				<div className='p-3 rounded-[2rem] bg-primary-50 text-primary'><MdQrCode2 className='w-40 h-40' /></div>
 				</Reveal>
 			</div>
 		</div>
