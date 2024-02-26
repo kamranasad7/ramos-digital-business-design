@@ -4,9 +4,9 @@ import IconButton from "../../components/UI/IconButton";
 import Image from "../../components/UI/Image";
 import { FaPlay } from "react-icons/fa";
 
-export const TagLine: React.FC = () => {
+const TagLine: React.FC = () => {
     return (
-        <p className='text-8xl flex flex-col max-w-full mx-auto'>
+        <div className='text-8xl flex flex-col max-w-full mx-auto'>
             <div className="grid grid-cols-3">
                 <div className="flex col-span-2">
                     <div className="flex flex-col">
@@ -35,6 +35,8 @@ export const TagLine: React.FC = () => {
                 />
             </div>
             <span className="flex justify-end w-full text-[7.6rem] gap-5">shape <IconButton variant="tertiary" className="w-fit h-fit p-8"><MdGraphicEq className='text-black h-fit w-fit text-6xl' /></IconButton> the future</span>
-        </p>
+        </div>
     )
 };
+
+export default TagLine;
