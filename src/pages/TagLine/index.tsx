@@ -1,7 +1,7 @@
 import { AiFillThunderbolt } from "react-icons/ai";
 import { MdGraphicEq, MdOutlineAutoGraph } from "react-icons/md";
-import IconButton from "../../UI/IconButton";
-import Image from "../../UI/Image";
+import IconButton from "../../components/UI/IconButton";
+import Image from "../../components/UI/Image";
 import { FaPlay } from "react-icons/fa";
 
 export const TagLine: React.FC = () => {
@@ -29,7 +29,7 @@ export const TagLine: React.FC = () => {
                     </div>
                 </div>
                 <Image 
-                    className="rounded-4xl w-96 h-72"
+                    className="rounded-3xl w-96 h-72"
                     src="https://media.istockphoto.com/id/1470130937/photo/young-plants-growing-in-a-crack-on-a-concrete-footpath-conquering-adversity-concept.webp?b=1&s=170667a&w=0&k=20&c=IRaA17rmaWOJkmjU_KD29jZo4E6ZtG0niRpIXQN17fc="
                     cornerButton={<IconButton variant='secondary' className="flex items-center justify-center w-fit h-fit p-5"><FaPlay className="text-white text-base" /></IconButton>}
                 />

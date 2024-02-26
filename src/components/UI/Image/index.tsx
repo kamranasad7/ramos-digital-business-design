@@ -13,7 +13,7 @@ const Image: React.FC<ImageProps> = (props) => {
 
     return (
         <div className="relative">
-            <div className="absolute -top-4 -left-4">
+            <div className="absolute -top-7 -left-7">
                 {cornerButton}
             </div>
             <img {...restProps} />

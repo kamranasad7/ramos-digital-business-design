@@ -1,13 +1,13 @@
 import Navbar from './components/UI/Navbar';
-import { Analytics } from './components/pages/Analytics';
-import { TagLine } from './components/pages/TagLine';
+import { Analytics } from './pages/Analytics';
+import { TagLine } from './pages/TagLine';
 
 function App() {
     return (
         <div className='w-full'>
             <Navbar />
 
-            <div className='mt-20'>
+            <div className='mt-20 flex flex-col gap-28'>
                 <TagLine />
                 <Analytics />
             </div>

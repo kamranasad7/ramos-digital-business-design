@@ -16,7 +16,7 @@ const ButtonGroup: React.FC<ButtonGroupProps> = ({ buttons }) => {
                 <button
                     key={i}
                     onClick={() => b.onClick?.()}
-                    className='bg-primary-medium rounded-none border-0 ring-0 focus:outline-0 hover:bg-primary-900 py-4 font-normal text-sm transition-all duration-200'
+                    className='bg-primary-medium rounded-none border-0 ring-0 focus:outline-0 hover:bg-primary-800 py-4 font-normal text-sm transition-all duration-200'
                 >
                     {b.text}
                 </button>

@@ -4,7 +4,7 @@ type CardVariant = 'primary' | 'secondary' | 'tertiary' | 'light';
 export type CardType = React.FC<PropsWithChildren<CardProps>>;
 
 const cardStyles: Record<CardVariant, string> = {
-    primary: '',
+    primary: 'bg-primary border border-primary-700 text-white',
     secondary: '',
     tertiary: '',
     light: 'bg-white border border-gray-200',
@@ -23,6 +23,6 @@ export const Card: CardType = (props) => {
         children
     } = props;
   return (
-    <div className={`p-6 ${cardStyles[variant]} ${className}`}>{children}</div>
+    <div className={`rounded-2xl p-6 ${cardStyles[variant]} ${className}`}>{children}</div>
   );
 };

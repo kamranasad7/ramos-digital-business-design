@@ -18,7 +18,7 @@ export default {
           600: '#5d5d5d',
           700: '#4f4f4f',
           800: '#454545',
-          900: '#3d3d3d',
+          900: '#1d1d1d',
           950: '#0d0d0d',
           medium: '#252525',
           light: '#cccccc'
@@ -27,7 +27,7 @@ export default {
         'tertiary': '#f8d250'
       },
       borderRadius: {
-        '4xl': '2rem',
+        '4xl': '4rem',
       },
       maxWidth: {
         full: '1280px',
