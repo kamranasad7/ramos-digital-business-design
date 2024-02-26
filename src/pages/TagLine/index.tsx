@@ -15,7 +15,7 @@ const TagLine: React.FC = () => {
                             <IconButton
                                 variant='light'
                                 className='p-8 w-fit h-fit'
-                                >
+                            >
                                 <AiFillThunderbolt size={36} />
                             </IconButton>
                             <IconButton

@@ -3,18 +3,18 @@ import { MdQrCode2 } from 'react-icons/md';
 
 const Footer: React.FC = () => {
 	return (
-		<div className='flex flex-col gap-16 px-20 py-32 pb-20 bg-primary text-primary-50'>
+		<div className='flex flex-col gap-16 px-20 py-32 pb-10 bg-primary text-primary-50'>
 			<div className='flex items-center justify-between'>
 				<div className='flex gap-10'>
-					<span className='text-xl transition-all duration-300 cursor-pointer text-primary-300 hover:text-primary-50'>About</span>
-					<span className='text-xl transition-all duration-300 cursor-pointer text-primary-300 hover:text-primary-50'>Why Us</span>
-					<span className='text-xl transition-all duration-300 cursor-pointer text-primary-300 hover:text-primary-50'>Platform</span>
-					<span className='text-xl transition-all duration-300 cursor-pointer text-primary-300 hover:text-primary-50'>Pricing</span>
-					<span className='text-xl transition-all duration-300 cursor-pointer text-primary-300 hover:text-primary-50'>Contact</span>
+					<a className='text-2xl transition-all duration-300 cursor-pointer text-primary-400 hover:text-primary-50'>About</a>
+					<a href='#' className='text-2xl transition-all duration-300 cursor-pointer text-primary-400 hover:text-primary-50'>Why Us</a>
+					<a href='#' className='text-2xl transition-all duration-300 cursor-pointer text-primary-400 hover:text-primary-50'>Platform</a>
+					<a href='#' className='text-2xl transition-all duration-300 cursor-pointer text-primary-400 hover:text-primary-50'>Pricing</a>
+					<a href='#' className='text-2xl transition-all duration-300 cursor-pointer text-primary-400 hover:text-primary-50'>Contacts</a>
 				</div>
-				<span className='text-6xl'>hello@ramos.com</span>
+				<span className='text-7xl'>hello@ramos.com</span>
 			</div>
-			<hr className='border-primary-300' />
+			<hr className='border-primary-400' />
 			<div className='flex justify-between'>
 				<div className='flex gap-32'>
 					<div className='flex flex-col gap-1'>
@@ -28,17 +28,17 @@ const Footer: React.FC = () => {
 						<span className='text-lg font-semibold text-primary-400'>63101</span>
 					</div>
 				</div>
-				<div className='flex flex-col gap-4 text-2xl'>
-					<span className='cursor-pointer'>Linkedin</span>
-					<span className='cursor-pointer'>Instagram</span>
-					<span className='cursor-pointer'>Facebook</span>
+				<div className='flex flex-col gap-8 text-2xl '>
+					<a href='#' className='cursor-pointer hover:text-secondary'>Linkedin</a>
+					<a href='#' className='cursor-pointer hover:text-secondary'>Instagram</a>
+					<a href='#' className='cursor-pointer hover:text-secondary'>Facebook</a>
 				</div>
 			</div>
 			<div className='flex items-center justify-between'>
-				<span className='relative font-semibold text-9xl'>Ramos<span className='absolute text-5xl font-bold'>&#174;</span></span>
-				<span className='transition duration-300 cursor-pointer text-primary-400 hover:text-primary-50'>Privacy Policy</span>
-				<span className='transition duration-300 cursor-pointer text-primary-400 hover:text-primary-50'>License agreement</span>
-				<div className='p-3 rounded-4xl bg-primary-50 text-primary'><MdQrCode2 className='w-40 h-40' /></div>
+				<span className='relative font-semibold text-10xl leading-[10rem]'>Ramos<span className='text-7xl align-super'>&#174;</span></span>
+				<a href='#' className='transition duration-300 cursor-pointer text-primary-400 hover:text-primary-50 text-xl'>Privacy Policy</a>
+				<a href='#' className='transition duration-300 cursor-pointer text-primary-400 hover:text-primary-50 text-xl'>License agreement</a>
+				<div className='p-3 rounded-3xl bg-primary-50 text-primary'><MdQrCode2 size={128} /></div>
 			</div>
 		</div>
 	);

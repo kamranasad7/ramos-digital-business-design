@@ -24,14 +24,17 @@ export default {
           light: '#cccccc'
         },
         'secondary': '#fe4a23',
-        'tertiary': '#f8d250'
+        'tertiary': '#ffcf26'
       },
       borderRadius: {
         '4xl': '4rem',
       },
       maxWidth: {
         full: '1280px',
-      }
+      },
+      fontSize: {
+        '10xl': '10rem',
+      },
     },
   },
   plugins: [],
